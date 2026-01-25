@@ -71,7 +71,7 @@ export default function UnderConstruction() {
                             USKORO ZAKAZIVANJE
                         </button>
                         <a
-                            href="https://instagram.com/uvackrstarica"
+                            href="https://www.instagram.com/rezervat_uvac_krstarenje?igsh=MXFhbmZiMTJoOWk3ag%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full md:w-auto flex items-center justify-center gap-2 text-white/80 hover:text-white px-8 md:px-10 py-4 rounded-xl font-bold transition-all border border-white/10 hover:bg-white/5 text-sm md:text-base"
