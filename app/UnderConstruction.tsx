@@ -27,7 +27,7 @@ export default function UnderConstruction() {
                         </span>
                         <h1 className="text-4xl md:text-7xl font-light text-white mb-4 md:mb-6 tracking-tighter leading-tight flex items-center justify-center gap-3">
     <span>
-        Uvac<span className="font-black italic text-[#1C7049]">Krstarica</span>
+       Plovidba<span className="font-black italic text-[#1C7049]">Uvac</span>
     </span>
                             <div
                                 style={{

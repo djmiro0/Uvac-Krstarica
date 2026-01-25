@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Uvac Krstarica",
-  description: "Krstarite meandrima Uvca",
+  title: "Plovidba Uvac",
+  description: "Plovidba meandrima Uvca",
 };
 
 export default function RootLayout({
