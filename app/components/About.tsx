@@ -37,8 +37,8 @@ export default function About() {
                     className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1623849764585-703358055452?q=80&w=1974&auto=format&fit=crop"
-                        alt="Vidikovac Uvac"
+                        src="/img_1.png"
+                        alt="Vidikovac Uvac @jelena.realtor"
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-[2s]"
                     />
                 </motion.div>

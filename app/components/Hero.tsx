@@ -8,7 +8,7 @@ export default function Hero() {
         <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?q=80&w=2070&auto=format&fit=crop"
+                    src="/img.png"
                     alt="Uvac Kanjon"
                     className="w-full h-full object-cover opacity-60"
                 />

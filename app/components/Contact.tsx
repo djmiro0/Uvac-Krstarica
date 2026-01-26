@@ -14,13 +14,13 @@ export default function Contact() {
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
-                    <a href="tel:+381600000000" className="flex items-center justify-center gap-3 bg-[#1C7049] hover:bg-[#155d3c] text-white px-8 py-4 rounded-xl font-bold transition-all w-full md:w-auto">
+                    <a href="tel:+38165303019" className="flex items-center justify-center gap-3 bg-[#1C7049] hover:bg-[#155d3c] text-white px-8 py-4 rounded-xl font-bold transition-all w-full md:w-auto">
                         <Phone size={20} />
-                        +381 6X XXX XXXX
+                        +381 65 3030 319
                     </a>
-                    <a href="https://instagram.com/uvackrstarica" className="flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-bold transition-all w-full md:w-auto">
+                    <a href="https://www.instagram.com/rezervat_uvac_krstarenje?igsh=MXFhbmZiMTJoOWk3ag%3D%3D" className="flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-bold transition-all w-full md:w-auto">
                         <Instagram size={20} />
-                        Instagram DM
+                        Instagram
                     </a>
                 </div>
 
