@@ -55,7 +55,7 @@ export default function UnderConstruction() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto mb-10 md:mb-16">
                         <div className="flex flex-col items-center justify-center bg-white/[0.03] border border-white/5 py-6 md:py-8 rounded-xl md:rounded-2xl transition-colors hover:bg-white/[0.05]">
                             <span className="text-gray-500 uppercase text-[8px] md:text-[9px] tracking-[0.2em] mb-2 md:mb-3 font-bold">Kapetan tura</span>
-                            <span className="text-white text-lg md:text-xl font-medium tracking-tight">Dragoje Bijelić</span>
+                            <span className="text-white text-lg md:text-xl font-medium tracking-tight">Dragoje Bjelić</span>
                         </div>
                         <div className="flex flex-col items-center justify-center bg-white/[0.03] border border-white/5 py-6 md:py-8 rounded-xl md:rounded-2xl transition-colors hover:bg-white/[0.05]">
                             <span className="text-gray-500 uppercase text-[8px] md:text-[9px] tracking-[0.2em] mb-2 md:mb-3 font-bold">Direktni kontakt</span>
