@@ -55,12 +55,12 @@ export default function UnderConstruction() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto mb-10 md:mb-16">
                         <div className="flex flex-col items-center justify-center bg-white/[0.03] border border-white/5 py-6 md:py-8 rounded-xl md:rounded-2xl transition-colors hover:bg-white/[0.05]">
                             <span className="text-gray-500 uppercase text-[8px] md:text-[9px] tracking-[0.2em] mb-2 md:mb-3 font-bold">Kapetan tura</span>
-                            <span className="text-white text-lg md:text-xl font-medium tracking-tight">Dejan Bijelić</span>
+                            <span className="text-white text-lg md:text-xl font-medium tracking-tight">Dragoje Bijelić</span>
                         </div>
                         <div className="flex flex-col items-center justify-center bg-white/[0.03] border border-white/5 py-6 md:py-8 rounded-xl md:rounded-2xl transition-colors hover:bg-white/[0.05]">
                             <span className="text-gray-500 uppercase text-[8px] md:text-[9px] tracking-[0.2em] mb-2 md:mb-3 font-bold">Direktni kontakt</span>
-                            <a href="tel:+381653030319" className="text-white text-lg md:text-xl font-medium hover:text-[#1C7049] transition-colors underline decoration-[#1C7049]/50 underline-offset-4 md:underline-offset-8">
-                                +381 65 3030 319
+                            <a href="tel:+381603228819" className="text-white text-lg md:text-xl font-medium hover:text-[#1C7049] transition-colors underline decoration-[#1C7049]/50 underline-offset-4 md:underline-offset-8">
+                                +381 60 322 88 19
                             </a>
                         </div>
                     </div>
