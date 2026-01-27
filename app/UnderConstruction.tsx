@@ -23,7 +23,7 @@ export default function UnderConstruction() {
                     {/* Header sekcija */}
                     <header className="mb-8 md:mb-12 text-center">
                         <span className="inline-block text-[#1C7049] font-bold tracking-[0.2em] md:tracking-[0.4em] uppercase text-[9px] md:text-[10px] mb-4 md:mb-6 border-b border-[#1C7049]/40 pb-2">
-                            Premium Nature Experience
+                            Jedinstven susret s prirodom
                         </span>
                         <h1 className="text-4xl md:text-7xl font-light text-white mb-4 md:mb-6 tracking-tighter leading-tight flex items-center justify-center gap-3">
     <span>
@@ -47,7 +47,7 @@ export default function UnderConstruction() {
                             />
                         </h1>
                         <p className="text-gray-400 text-sm md:text-lg max-w-lg mx-auto leading-relaxed font-light">
-                            Vaša sledeća avantura kroz meandre je u pripremi. Lansiramo napredni sistem za online rezervacije.
+                            Vaša sledeća avantura kroz meandre je u pripremi.
                         </p>
                     </header>
 
@@ -84,9 +84,9 @@ export default function UnderConstruction() {
                 {/* Footer */}
                 <footer className="mt-8 md:mt-12 text-center">
                     <p className="text-white/40 text-[8px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.5em] font-medium leading-loose">
-                        &copy; 2026 Uvac Krstarica <br className="md:hidden" />
+                        &copy; 2026 Plovidba Uvac <br className="md:hidden" />
                         <span className="hidden md:inline"> &bull; </span>
-                        Professional Booking Platform
+                        Profesionalna usluga
                     </p>
                 </footer>
             </main>
