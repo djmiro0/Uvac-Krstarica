@@ -47,6 +47,22 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                     <a href="#home" className="text-xl md:text-2xl font-light text-white flex items-center gap-2">
                         Plovidba<span className="font-black italic text-[#1C7049]">Uvac</span>
+                        <div
+                            style={{
+                                backgroundColor: '#1C7049',
+                                WebkitMaskImage: `url('/favicon.ico')`,
+                                maskImage: `url('/favicon.ico')`,
+                                WebkitMaskRepeat: 'no-repeat',
+                                maskRepeat: 'no-repeat',
+                                maskSize: 'contain',
+                                WebkitMaskPosition: 'center',
+                                width: '0.8em',
+                                height: '0.8em',
+                                minWidth: '20px',
+                                minHeight: '20px'
+                            }}
+                            aria-hidden="true"
+                        />
                     </a>
 
                     {/* Desktop Meni */}

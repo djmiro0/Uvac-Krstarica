@@ -8,7 +8,7 @@ interface ServiceItem {
     icon: React.ReactNode;
     title: string;
     text: string;
-    detail?: string; // Dodatni mali detalj za bogatiji UI
+    detail?: string;
 }
 
 export default function Services() {
@@ -52,8 +52,10 @@ export default function Services() {
     ];
 
     return (
-        <section id="voznja" className="py-24 px-6 bg-[#030b1c] relative">
-            {/* Suptilna dekoracija u pozadini */}
+        /* Pozadina sekcije je sada najtamnija nijansa */
+        <section id="voznja" className="py-24 px-6 bg-[#020617] relative">
+
+            {/* Sjaj u pozadini za dubinu */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#1C7049]/5 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="max-w-6xl mx-auto relative z-10">
@@ -76,14 +78,15 @@ export default function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            whileHover={{ y: -8, backgroundColor: "rgba(2, 6, 23, 1)" }}
-                            className="group bg-[#020617]/50 p-8 rounded-[2rem] border border-white/5 hover:border-[#1C7049]/40 transition-all duration-300"
+                            /* Kartica ima svetliju nijansu (bg-[#030b1c]) koja odskače od pozadine */
+                            whileHover={{ y: -8, backgroundColor: "rgba(11, 18, 36, 1)" }}
+                            className="group bg-[#030b1c] p-8 rounded-[2rem] border border-white/5 hover:border-[#1C7049]/40 transition-all duration-300 shadow-xl"
                         >
                             <div className="flex justify-between items-start mb-6">
                                 <div className="w-14 h-14 bg-[#1C7049]/10 rounded-2xl flex items-center justify-center text-[#1C7049] group-hover:bg-[#1C7049] group-hover:text-white transition-colors duration-300">
                                     {service.icon}
                                 </div>
-                                <span className="text-[10px] uppercase tracking-tighter text-gray-600 font-bold group-hover:text-[#1C7049] transition-colors">
+                                <span className="text-[10px] uppercase tracking-tighter text-gray-500 font-bold group-hover:text-[#1C7049] transition-colors">
                                     {service.detail}
                                 </span>
                             </div>
@@ -98,11 +101,10 @@ export default function Services() {
                     ))}
                 </div>
 
-                {/* Bottom Call to Action info */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    className="mt-16 p-6 rounded-2xl bg-[#1C7049]/5 border border-[#1C7049]/20 text-center"
+                    className="mt-16 p-6 rounded-2xl bg-[#030b1c] border border-white/5 text-center"
                 >
                     <p className="text-gray-400 text-sm">
                         * Sve ture se realizuju uz poštovanje pravila Specijalnog rezervata prirode Uvac.

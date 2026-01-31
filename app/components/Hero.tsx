@@ -20,22 +20,6 @@ export default function Hero() {
                 <span className="flex items-center gap-2">
                    Plovidba<span className="font-black italic text-[#1C7049]">Uvac</span>
                 </span>
-                    <div
-                        style={{
-                            backgroundColor: '#1C7049',
-                            WebkitMaskImage: `url('/favicon.ico')`,
-                            maskImage: `url('/favicon.ico')`,
-                            WebkitMaskRepeat: 'no-repeat',
-                            maskRepeat: 'no-repeat',
-                            maskSize: 'contain',
-                            WebkitMaskPosition: 'center',
-                            width: '0.8em',
-                            height: '0.8em',
-                            minWidth: '40px',
-                            minHeight: '40px'
-                        }}
-                        aria-hidden="true"
-                    />
                 </h1>
 
                 <motion.p
