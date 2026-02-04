@@ -49,21 +49,20 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <p className="text-[10px] text-gray-500 uppercase font-bold">Lokacija Polaska</p>
-                                        <p className="text-sm md:text-base italic">Kamp Markova Ravan, Uvac</p>
+                                        <p className="text-sm md:text-base italic">Komarani BB, 31320, Srbija</p>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
                     </div>
 
-                    {/* Desna strana: Dugmići - REŠEN RESPONSIVE PROBLEM */}
+                    {/* Desna strana: Dugmići */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         className="flex flex-col gap-3 w-full"
                     >
-                        {/* Telefon */}
                         <a
                             href="tel:+381653030319"
                             className="group flex items-center justify-between bg-[#1C7049] hover:bg-[#155d3c] text-white p-5 md:p-6 rounded-2xl font-bold transition-all shadow-lg shadow-[#1C7049]/20 overflow-hidden"
@@ -72,14 +71,12 @@ export default function Contact() {
                                 <Phone size={22} className="shrink-0" />
                                 <div className="text-left overflow-hidden">
                                     <span className="block text-[9px] uppercase opacity-70 tracking-wider text-nowrap">Pozovite odmah</span>
-                                    {/* Smanjen font na mobilnom (text-base), veći na desktopu (text-xl) */}
                                     <span className="text-base sm:text-lg md:text-xl block text-nowrap">+381 65 3030 319</span>
                                 </div>
                             </div>
                             <Navigation size={18} className="shrink-0 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all hidden sm:block" />
                         </a>
 
-                        {/* WhatsApp */}
                         <a
                             href="https://wa.me/381653030319"
                             className="flex items-center gap-3 md:gap-4 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 text-white p-5 md:p-6 rounded-2xl font-bold transition-all overflow-hidden"
@@ -91,7 +88,6 @@ export default function Contact() {
                             </div>
                         </a>
 
-                        {/* Instagram */}
                         <a
                             href="https://www.instagram.com/rezervat_uvac_krstarenje"
                             target="_blank"
@@ -100,25 +96,48 @@ export default function Contact() {
                             <Instagram size={22} className="text-pink-500 shrink-0" />
                             <div className="text-left overflow-hidden">
                                 <span className="block text-[9px] uppercase text-gray-500 tracking-wider text-nowrap">Zaprati nas</span>
-                                {/* Ključno: text-xs na najužim ekranima, smanjuje se da ne bi virilo */}
                                 <span className="text-sm sm:text-base md:text-lg block truncate max-w-full">@rezervat_uvac_krstarenje</span>
                             </div>
                         </a>
                     </motion.div>
                 </div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-12 w-full h-[350px] md:h-[450px] rounded-[2.5rem] overflow-hidden border border-[#1C7049]/50 shadow-[0_0_25px_rgba(28,112,73,0.4),0_0_60px_rgba(28,112,73,0.2)] relative"
+                >
+                    {/* Unutrašnji sjaj na ivicama */}
+                    <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-[#1C7049]/30 rounded-[2.5rem] z-10" />
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11526.474431525414!2d19.9654117!3d43.3444747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475823126be15e19%3A0xc6c4f420e1f76d41!2sUvac!5e0!3m2!1sen!2srs!4v1700000000000"
+                        width="100%"
+                        height="100%"
+                        style={{
+                            border: 0,
+                            filter: "contrast(1.05) brightness(0.9) saturate(1.1)",
+                        }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Uvac Lokacija"
+                        className="opacity-95 hover:opacity-100 transition-opacity duration-500"
+                    />
+                </motion.div>
 
                 {/* Footer deo */}
-                <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-[12px] md:text-sm text-center md:text-left">
+                <footer className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-[12px] md:text-sm text-center md:text-left">
                     <div>
                         <p className="font-bold text-gray-400 mb-1">Specijalni Rezervat Prirode Uvac</p>
-                        <p>&copy; {currentYear} Plovidba Uvac. Sva prava zadržana.</p>
+                        <p>© {currentYear} Plovidba Uvac. Sva prava zadržana.</p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 md:gap-8">
                         <a href="#kanjon" className="hover:text-[#1C7049] transition-colors">O Rezervatu</a>
                         <a href="#voznja" className="hover:text-[#1C7049] transition-colors">Ture</a>
                         <a href="#" className="hover:text-[#1C7049] transition-colors">Privatnost</a>
                     </div>
-                </div>
+                </footer>
             </div>
         </section>
     );
