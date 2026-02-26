@@ -14,20 +14,20 @@ export default function Gallery() {
         { src: '/gosti.png', alt: 'Zadovoljni gosti', size: 'md:col-span-1 md:row-span-2' },
         { src: '/pecina.png', alt: 'Ulaz u Ledenu pećinu @Bravo Tours', size: 'md:col-span-1 md:row-span-1' },
         { src: '/camac.png', alt: 'Naš voljeni čamac', size: 'md:col-span-2 md:row-span-1' },
-        { src: '/dzip.png', alt: 'Naša off-road vozila', size: 'md:col-span-2 md:row-span-1' }
+        { src: '/dzip.png', alt: 'Vožnja džipom - dostupna tokom cele godine', size: 'md:col-span-2 md:row-span-1' }
     ];
 
     return (
         <section id="galerija" className="py-24 px-6 bg-[#020617]">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
-                <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div className="flex flex-col justify-between mb-12 gap-6">
                     <div>
                         <span className="text-[#1C7049] tracking-widest uppercase text-sm font-bold mb-2 block">Kroz objektiv</span>
-                        <h2 className="text-4xl md:text-5xl font-light text-white">Doživljaj sa <span className="font-bold">vožnje</span></h2>
+                        <h2 className="text-4xl md:text-5xl font-light text-white">Doživljaj sa <span className="font-bold">tura</span></h2>
                     </div>
-                    <p className="text-gray-400 max-w-md text-sm md:text-right">
-                        Svaka slika je zabeležena tokom naših tura. Od bliskih susreta sa supovima do istraživanja skrivenih uglova kanjona.
+                    <p className="text-gray-400 leading-relaxed mb-8 text-lg">
+                        Svaka slika je zabeležena tokom naših tura. Od bliskih susreta sa supovima na reci do off-road avantura koje organizujemo tokom cele godine.
                     </p>
                 </div>
 

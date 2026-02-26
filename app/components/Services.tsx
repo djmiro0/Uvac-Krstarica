@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, Wind, Clock, MapPin, Anchor, Camera } from 'lucide-react';
+import { Users, Wind, Clock, MapPin, Anchor, Camera, Car } from 'lucide-react';
 
 interface ServiceItem {
     icon: React.ReactNode;
@@ -38,16 +38,16 @@ export default function Services() {
             detail: "Fleksibilni polasci"
         },
         {
-            icon: <Wind size={24} />,
-            title: "Eko Plovidba",
-            text: "Naši čamci i način vožnje minimiziraju buku kako ne bismo remetili prirodni mir ptica.",
-            detail: "Očuvanje prirode"
-        },
-        {
             icon: <Users size={24} />,
             title: "Lokalni Vodiči",
             text: "Upoznajte istoriju i legende Uvca kroz priče iskusnih meštana koji poznaju svaki kamen.",
             detail: "Priče iz prve ruke"
+        },
+        {
+            icon: <Car size={24} />,
+            title: "Vožnja Džipom",
+            text: "Uzbudljiva off-road avantura do skrivenih vidikovaca. Istražite netaknutu prirodu i lepote rezervata sa kopna.",
+            detail: "Tokom cele godine"
         }
     ];
 

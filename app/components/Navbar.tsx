@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Link from "next/link";
 
 interface NavLink {
     title: string;
@@ -30,7 +31,7 @@ export default function Navbar() {
     }, [isOpen]);
 
     const navLinks: NavLink[] = [
-        { title: 'Početna', href: '#home' },
+        { title: 'Početna', href: '/' },
         { title: 'O Kanjonu', href: '#kanjon' },
         { title: 'Vožnja', href: '#voznja' },
         { title: 'Kontakt', href: '#kontakt' },
@@ -45,7 +46,7 @@ export default function Navbar() {
                 }`}
             >
                 <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-                    <a href="#home" className="text-xl md:text-2xl font-light text-white flex items-center gap-2">
+                    <Link href="/" className="text-xl md:text-2xl font-light text-white flex items-center gap-2">
                         Plovidba<span className="font-black italic text-[#1C7049]">Uvac</span>
                         <div
                             style={{
@@ -63,18 +64,18 @@ export default function Navbar() {
                             }}
                             aria-hidden="true"
                         />
-                    </a>
+                    </Link>
 
                     {/* Desktop Meni */}
                     <div className="hidden md:flex gap-10">
                         {navLinks.map((link) => (
-                            <a
+                            <Link
                                 key={link.title}
                                 href={link.href}
                                 className="text-white/70 hover:text-white text-[11px] uppercase tracking-[0.2em] transition-all hover:letter-spacing-[0.3em]"
                             >
                                 {link.title}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
@@ -140,8 +141,8 @@ export default function Navbar() {
                             {/* Dno sidebara sa kontaktom */}
                             <div className="mt-auto p-8 border-t border-white/5 bg-white/[0.02]">
                                 <p className="text-[#1C7049] text-xs font-bold uppercase tracking-widest mb-4">Rezervacije</p>
-                                <a href="tel:+381653030319" className="text-white font-bold">+381 65 3030 319
-                                </a>
+                                <Link href="tel:+381603228819" className="text-white font-bold">+381 60 3228 819
+                                </Link>
                             </div>
                         </motion.div>
                     </>
