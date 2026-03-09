@@ -123,7 +123,7 @@ export default function Contact() {
                         <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-[#1C7049]/30 rounded-[2rem] z-10" />
 
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11526.474431525414!2d19.9654117!3d43.3444747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475823126be15e19%3A0xc6c4f420e1f76d41!2sUvac!5e0!3m2!1sen!2srs!4v1700000000000"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.8832328634353!2d19.9261475!3d43.417939399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4757ef648d00e42d%3A0x5acfc8c3984e5e96!2sKrstarenje%20Uvcem%20-%20Uvac%20cruise!5e1!3m2!1sen!2sde!4v1773065648046!5m2!1sen!2sde"
                             width="100%"
                             height="100%"
                             style={{
