@@ -2,7 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import FloatingBoat from './components/FloatingBoat';
 import Hero from './components/Hero';
+import Experience from './components/Experience';
 import About from './components/About';
+import QuadAdventure from './components/QuadAdventure';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
@@ -15,7 +17,9 @@ export default function Home() {
         <Navbar />
         <FloatingBoat />
         <Hero />
+        <Experience />
         <About />
+        <QuadAdventure />
         <Services />
           <Gallery />
         <Contact />

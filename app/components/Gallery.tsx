@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera, Maximize2, X } from 'lucide-react';
+import Image from "next/image";
 
 export default function Gallery() {
     // Stanje za praćenje selektovane slike
@@ -14,7 +15,10 @@ export default function Gallery() {
         { src: '/gosti.png', alt: 'Zadovoljni gosti', size: 'md:col-span-1 md:row-span-2' },
         { src: '/pecina.png', alt: 'Ulaz u Ledenu pećinu @Bravo Tours', size: 'md:col-span-1 md:row-span-1' },
         { src: '/camac.png', alt: 'Naš voljeni čamac', size: 'md:col-span-2 md:row-span-1' },
-        { src: '/dzip.png', alt: 'Vožnja džipom - dostupna tokom cele godine', size: 'md:col-span-2 md:row-span-1' }
+        { src: '/dzip.png', alt: 'Vožnja džipom - dostupna tokom cele godine', size: 'md:col-span-2 md:row-span-1' },
+        { src: '/img_2.png', alt: 'Plovidba Uvac', size: 'md:col-span-2 md:row-span-2' },
+        { src: '/img_3.png', alt: 'Plovidba Uvac', size: 'md:col-span-1 md:row-span-2' },
+        { src: '/img_4.png', alt: 'Plovidba Uvac', size: 'md:col-span-1 md:row-span-2' },
     ];
 
     return (
@@ -43,9 +47,11 @@ export default function Gallery() {
                             onClick={() => setSelectedImg(img)} // Otvaranje Lightbox-a
                             className={`relative group overflow-hidden rounded-[2rem] border border-white/5 cursor-pointer ${img.size}`}
                         >
-                            <img
+                            <Image
                                 src={img.src}
                                 alt={img.alt}
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 42vw"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
 

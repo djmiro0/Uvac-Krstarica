@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, Wind, Clock, MapPin, Anchor, Camera, Car } from 'lucide-react';
+import { Users, Clock, MapPin, Anchor, Camera, Car } from 'lucide-react';
 
 interface ServiceItem {
     icon: React.ReactNode;
@@ -48,7 +48,7 @@ export default function Services() {
             title: "Vožnja Džipom",
             text: "Uzbudljiva off-road avantura do skrivenih vidikovaca. Istražite netaknutu prirodu i lepote rezervata sa kopna.",
             detail: "Tokom cele godine"
-        }
+        },
     ];
 
     return (

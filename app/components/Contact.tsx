@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Instagram, MapPin, Clock, MessageCircle, Navigation, Ship, CarFront } from 'lucide-react';
+import { Phone, Instagram, MapPin, Clock, MessageCircle, Navigation, Ship, CarFront, Bike } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -47,6 +47,10 @@ export default function Contact() {
                                             <div className="flex items-center gap-2">
                                                 <CarFront size={16} className="text-[#1C7049]" />
                                                 <p className="text-sm md:text-base"><span className="font-semibold text-white">Džip ture:</span> Tokom cele godine</p>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <Bike size={16} className="text-[#1C7049]" />
+                                                <p className="text-sm md:text-base"><span className="font-semibold text-white">Kvad vožnja:</span> Po dogovoru i vremenskim uslovima</p>
                                             </div>
                                         </div>
                                     </div>

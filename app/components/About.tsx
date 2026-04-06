@@ -3,19 +3,49 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Bird, Mountain } from 'lucide-react';
+import Image from "next/image";
 
 export default function About() {
     return (
         <section id="kanjon" className="py-24 px-6 relative bg-[#020617] overflow-hidden">
             {/* Suptilna pozadinska senka za dubinu */}
-            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(28,112,73,0.05),transparent)] pointer-events-none" />
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,rgba(28,112,73,0.05),transparent)] pointer-events-none" />
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+                {/* Slika - sada na levoj strani (na desktopu) */}
                 <motion.div
-                    initial={{ opacity: 0, x: -50 }}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="relative group order-2 md:order-1"
+                >
+                    <div className="absolute -inset-4 bg-[#1C7049]/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+
+                    <div className="relative h-[550px] rounded-3xl overflow-hidden shadow-2xl border border-white/5">
+                        <Image
+                            src="/img_1.png"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 42vw"
+                            alt="Vidikovac Molitva - Meandri Uvca"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3s] ease-out"
+                        />
+
+                        {/* Overlay info na slici */}
+                        <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+                            <p className="text-white text-sm font-medium italic">Vidikovac Molitva - mesto gde se dodiruju nebo i meandri.</p>
+                            <p className="text-gray-400 text-xs mt-1">@jelena.realtor</p>
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Tekstualni sadržaj - sada na desnoj strani (na desktopu) */}
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
+                    className="order-1 md:order-2"
                 >
                     <span className="text-[#1C7049] tracking-widest uppercase text-sm font-bold mb-2 block">
                         Specijalni Rezervat Prirode
@@ -69,28 +99,6 @@ export default function About() {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    className="relative group"
-                >
-                    <div className="absolute -inset-4 bg-[#1C7049]/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-
-                    <div className="relative h-[550px] rounded-3xl overflow-hidden shadow-2xl border border-white/5">
-                        <img
-                            src="/img_1.png"
-                            alt="Vidikovac Molitva - Meandri Uvca"
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3s] ease-out"
-                        />
-
-                        {/* Overlay info na slici */}
-                        <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
-                            <p className="text-white text-sm font-medium italic">"Vidikovac Molitva - mesto gde se dodiruju nebo i meandri."</p>
-                            <p className="text-gray-400 text-xs mt-1">@jelena.realtor</p>
-                        </div>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );
